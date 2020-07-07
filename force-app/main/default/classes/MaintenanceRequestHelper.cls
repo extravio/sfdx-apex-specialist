@@ -45,11 +45,12 @@ public with sharing class MaintenanceRequestHelper {
         Case newCase = new Case(
             Status = 'New',
             Type = 'Routine Maintenance',
-            Subject = 'Routine Maintenance',
+            Subject =  String.isBlank(closedCase.Subject) ? 'Routine Maintenance' : closedCase.Subject,
             Origin = closedCase.Origin,
             Vehicle__c = closedCase.Vehicle__c,
             Date_Reported__c = System.today(),
             Date_Due__c = System.today().addDays(intDays),
+            Equipment__c =  closedCase.Equipment__c,
             ParentId = closedCase.Id
         );
 
