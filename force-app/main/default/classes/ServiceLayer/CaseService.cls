@@ -24,3 +24,8 @@ global class CaseService {
     }
     public class CaseServiceException extends Exception {} 
 }
+
+// Testing in Developer console
+// Set<Id> caseIds = new Set<Id>();
+// caseIds.add('5002w000005uOmdAAE');
+// CaseService.closeCases(caseIds, 'My reason');
