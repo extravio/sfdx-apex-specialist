@@ -38,3 +38,7 @@ SELECT Id, Maintenance_Request__r.Id, Maintenance_Request__r.CaseNumber, Equipme
 
 SELECT Maintenance_Request__r.Id, MIN(Equipment__r.Maintenance_Cycle__c)  FROM Work_Part__c GROUP BY Maintenance_Request__r.Id
 ```
+
+# Service Layer module
+
+https://trailhead.salesforce.com/content/learn/modules/apex_patterns_sl/apex_patterns_sl_apply_sl_principles
